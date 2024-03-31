@@ -1,0 +1,175 @@
+.introduction{
+    display:flex;
+    height: 110vh; 
+    background-color:rgb(223 223 223);
+}
+
+.i-name {
+    font-size: 60px;
+    display: inline-block;
+    position: relative; 
+    cursor:default;
+}
+
+.i-name .tooltiptext {
+    font-size: large;
+    visibility: hidden;
+    width: 40%;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 0px 10px 3px rgb(243, 243, 246);;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: rgb(223 223 223);
+    opacity: 0;
+    transition: opacity 1s;
+    
+}
+
+.i-name:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+
+
+.i-left{
+    flex:1;
+    display:flex;
+    align-items: center;
+
+}
+
+.i-right{
+    flex:1;
+    position:relative; 
+}
+
+.i-left-wrapper{
+    padding: 50px;
+    height:50%;
+    background-color: aqua;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.i-intro{
+    font-size:30px;
+    font-weight: 300;
+}
+
+
+
+.i-title{
+    height: 50px;
+    overflow: hidden; 
+
+}
+
+.i-title-wrapper{
+    height:100%;
+    animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move{
+    25%{transform: translateY(-50px);}
+    50%{transform: translateY(-100px);}
+    75%{transform: translateY(-150px);}
+    100%{transform: translateY(-200px);}
+}
+
+.i-title-item{
+
+    height: 50px; 
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 0 0 3px rgb(54, 56, 6);
+    display: flex;
+    align-items: center;
+   
+}
+.i-desc{
+    font-size: larger;
+}
+.img-me{
+    padding-top: 16%;
+    width:60%;
+    height:64.5%;
+    filter:grayscale(180%);
+    object-fit: cover;
+    position:absolute;
+    
+   
+
+        
+}
+
+.i-bg{
+    clip-path: circle(61.8% at 75% 29%);
+    background-color: cadetblue;
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    right:0;
+
+
+}
+@media screen and (max-width: 480px) {
+    .introduction {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .i-left-wrapper {
+        padding: 20px;
+        height: auto;
+        background-color: unset;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .i-right {
+        position: static;
+    }
+
+    .img-me {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+        filter: grayscale(0%);
+    }
+
+    .i-bg {
+        display: none;
+    }
+
+    .i-name {
+        font-size: 40px;
+    }
+
+    .i-title-wrapper {
+        animation: none;
+    }
+
+    .i-title-item {
+        height: auto;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .i-desc {
+        font-size: medium;
+    }
+}
+
+

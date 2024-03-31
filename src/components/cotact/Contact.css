@@ -1,0 +1,133 @@
+.co{
+    height:100vh;
+    background-color:rgb(242, 236, 236);
+    position:relative;
+}
+.co-title{
+    font-size:50px;
+    width: 80%;
+
+}
+
+.co-bg{
+    width:20px;
+    height:100%;
+    background-color:aqua;
+    position:absolute;
+}
+
+
+.co-wrapper{
+   
+    padding:100px ;
+    display:flex;
+}
+
+.co-left{
+    flex:1;
+}
+
+.co-right{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.co-info-item{
+    
+    display:flex;
+    align-items:center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-weight:300;
+    
+
+}
+
+.fas.fa-duotone.fa-location-pin
+{
+    margin-left:4px;
+    margin-top: 5px;
+    
+    }
+
+
+.co-desc{
+    font-size:20px;
+} 
+
+form{
+    margin-top:20px;
+}
+
+input{
+    width:50%;
+    height:50px;
+    border:none;
+    border-bottom:1px solid black;
+    margin:10px 0px;
+    font-size:14px;
+    padding-left:10px;
+}
+
+textarea{
+    width:100%;
+    margin:10px 0px;
+    font-size:14px;
+    padding-left:10px;
+}
+
+button{
+    border:none;
+    padding:15px;
+    background-color:rgb(247, 171, 104);
+    box-shadow: 0px 0px 10px 0px rgb(245, 92, 92);
+    border-radius: 8px;
+    font-size:20px;
+    font-weight:900;
+    cursor:pointer;
+    
+}
+
+button:hover{
+    box-shadow: 0px 0px 10px 0px red;
+}
+
+@media screen and (max-width: 480px) {
+    .co-title {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .co-bg {
+        display: none;
+    }
+
+    .co-wrapper {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .co-info-item {
+        font-size: 24px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .fas.fa-duotone.fa-location-pin {
+        margin-left: 2px;
+        margin-top: 3px;
+    }
+
+    input, textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+

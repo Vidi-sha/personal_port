@@ -1,0 +1,22 @@
+
+.js-heart {
+ 
+    cursor: pointer; 
+    font-size: 22px; 
+}
+
+
+.fas.fa-heart {
+    color: red; 
+}
+
+
+.far.fa-heart {
+    color: black;
+}
+
+
+.far.fa-heart:hover {
+    color: red;
+    font-size: 25px; 
+}
